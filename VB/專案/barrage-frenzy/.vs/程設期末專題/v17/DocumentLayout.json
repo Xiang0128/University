@@ -1,0 +1,231 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D814C8F0-AD2B-4312-A317-1B7544A9ECA7}|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj|d:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\vb\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D814C8F0-AD2B-4312-A317-1B7544A9ECA7}|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj|solutionrelative:\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D814C8F0-AD2B-4312-A317-1B7544A9ECA7}|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj|D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\form5.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D814C8F0-AD2B-4312-A317-1B7544A9ECA7}|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj|solutionrelative:\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\form5.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D814C8F0-AD2B-4312-A317-1B7544A9ECA7}|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj|D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\form8.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D814C8F0-AD2B-4312-A317-1B7544A9ECA7}|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj|solutionrelative:\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\form8.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D814C8F0-AD2B-4312-A317-1B7544A9ECA7}|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj|D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\form6.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D814C8F0-AD2B-4312-A317-1B7544A9ECA7}|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj|solutionrelative:\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\form6.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D814C8F0-AD2B-4312-A317-1B7544A9ECA7}|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj|D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\form5.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D814C8F0-AD2B-4312-A317-1B7544A9ECA7}|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj|solutionrelative:\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\form5.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D814C8F0-AD2B-4312-A317-1B7544A9ECA7}|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj|D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\form7.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D814C8F0-AD2B-4312-A317-1B7544A9ECA7}|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj|solutionrelative:\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\form7.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D814C8F0-AD2B-4312-A317-1B7544A9ECA7}|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj|D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\form6.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D814C8F0-AD2B-4312-A317-1B7544A9ECA7}|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj|solutionrelative:\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\form6.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D814C8F0-AD2B-4312-A317-1B7544A9ECA7}|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj|D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D814C8F0-AD2B-4312-A317-1B7544A9ECA7}|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj|solutionrelative:\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D814C8F0-AD2B-4312-A317-1B7544A9ECA7}|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj|D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\form8.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D814C8F0-AD2B-4312-A317-1B7544A9ECA7}|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj|solutionrelative:\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\form8.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D814C8F0-AD2B-4312-A317-1B7544A9ECA7}|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj|D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\form7.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D814C8F0-AD2B-4312-A317-1B7544A9ECA7}|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj|solutionrelative:\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\form7.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D814C8F0-AD2B-4312-A317-1B7544A9ECA7}|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj|D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\form4.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D814C8F0-AD2B-4312-A317-1B7544A9ECA7}|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj|solutionrelative:\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\form4.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D814C8F0-AD2B-4312-A317-1B7544A9ECA7}|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj|D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D814C8F0-AD2B-4312-A317-1B7544A9ECA7}|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj|solutionrelative:\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D814C8F0-AD2B-4312-A317-1B7544A9ECA7}|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj|D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D814C8F0-AD2B-4312-A317-1B7544A9ECA7}|\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj|solutionrelative:\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form5.vb",
+              "DocumentMoniker": "D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form5.vb",
+              "RelativeDocumentMoniker": "\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form5.vb",
+              "ToolTip": "D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form5.vb",
+              "RelativeToolTip": "\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form5.vb",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-06-04T21:47:18.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form6.vb",
+              "DocumentMoniker": "D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form6.vb",
+              "RelativeDocumentMoniker": "\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form6.vb",
+              "ToolTip": "D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form6.vb",
+              "RelativeToolTip": "\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form6.vb",
+              "ViewState": "AQIAAAAAAAAAAAAAAAA+wAQAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-06-04T21:47:18.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form3.vb",
+              "DocumentMoniker": "D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form3.vb",
+              "RelativeDocumentMoniker": "\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form3.vb",
+              "ToolTip": "D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form3.vb",
+              "RelativeToolTip": "\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form3.vb",
+              "ViewState": "AQIAAB4BAAAAAAAAAAAuwHAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-04T21:47:19.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form7.vb",
+              "DocumentMoniker": "D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form7.vb",
+              "RelativeDocumentMoniker": "\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form7.vb",
+              "ToolTip": "D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form7.vb",
+              "RelativeToolTip": "\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form7.vb",
+              "ViewState": "AQIAABwAAAAAAAAAAAAQwDAAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-06-04T21:47:19.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Form7.vb [\u8A2D\u8A08]",
+              "DocumentMoniker": "D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form7.vb",
+              "RelativeDocumentMoniker": "\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form7.vb",
+              "ToolTip": "C:\\Users\\cx200\\Downloads\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form7.vb [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-06-04T21:47:19.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Form8.vb",
+              "DocumentMoniker": "D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form8.vb",
+              "RelativeDocumentMoniker": "\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form8.vb",
+              "ToolTip": "D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form8.vb",
+              "RelativeToolTip": "\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form8.vb",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-06-04T21:47:19.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form8.vb [\u8A2D\u8A08]",
+              "DocumentMoniker": "D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form8.vb",
+              "RelativeDocumentMoniker": "\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form8.vb",
+              "ToolTip": "C:\\Users\\cx200\\Downloads\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form8.vb [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-06-04T21:47:19.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form6.vb [\u8A2D\u8A08]",
+              "DocumentMoniker": "D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form6.vb",
+              "RelativeDocumentMoniker": "\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form6.vb",
+              "ToolTip": "C:\\Users\\cx200\\Downloads\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form6.vb [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-06-04T21:47:19.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form5.vb [\u8A2D\u8A08]",
+              "DocumentMoniker": "D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form5.vb",
+              "RelativeDocumentMoniker": "\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form5.vb",
+              "ToolTip": "C:\\Users\\cx200\\Downloads\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form5.vb [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-06-04T21:47:19.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Form4.vb [\u8A2D\u8A08]",
+              "DocumentMoniker": "D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form4.vb",
+              "RelativeDocumentMoniker": "\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form4.vb",
+              "ToolTip": "D:\\class\\\u8996\u7A97\u7A0B\u8A2D\\vb_final_project\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form4.vb [\u8A2D\u8A08]",
+              "RelativeToolTip": "..\\..\\..\\..\\class\\\u8996\u7A97\u7A0B\u8A2D\\vb_final_project\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form4.vb [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-06-04T21:47:19.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form3.vb [\u8A2D\u8A08]",
+              "DocumentMoniker": "D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form3.vb",
+              "RelativeDocumentMoniker": "\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form3.vb",
+              "ToolTip": "D:\\vb_final_project\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form3.vb [\u8A2D\u8A08]",
+              "RelativeToolTip": "..\\..\\..\\..\\vb_final_project\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form3.vb [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-06-04T21:47:19.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "\u7A0B\u8A2D\u671F\u672B\u5C08\u984C",
+              "DocumentMoniker": "D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj",
+              "RelativeDocumentMoniker": "\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj",
+              "ToolTip": "D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj",
+              "RelativeToolTip": "\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C.vbproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003380|",
+              "WhenOpened": "2024-01-07T14:17:00.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Form2.vb [\u8A2D\u8A08]",
+              "DocumentMoniker": "D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form2.vb",
+              "RelativeDocumentMoniker": "\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form2.vb",
+              "ToolTip": "D:\\class\\\u8996\u7A97\u7A0B\u8A2D\\vb_final_project\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form2.vb [\u8A2D\u8A08]",
+              "RelativeToolTip": "..\\..\\..\\..\\class\\\u8996\u7A97\u7A0B\u8A2D\\vb_final_project\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form2.vb [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-06-04T21:47:19.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Form1.vb [\u8A2D\u8A08]",
+              "DocumentMoniker": "D:\\\u5927\u5B78\\\u5927\u4E8C\u4E0A\\VB\u7A0B\u5F0F\u8A2D\u8A08\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form1.vb",
+              "RelativeDocumentMoniker": "\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form1.vb",
+              "ToolTip": "D:\\class\\\u8996\u7A97\u7A0B\u8A2D\\vb_final_project\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form1.vb [\u8A2D\u8A08]",
+              "RelativeToolTip": "..\\..\\..\\..\\class\\\u8996\u7A97\u7A0B\u8A2D\\vb_final_project\\barrage-frenzy\\\u7A0B\u8A2D\u671F\u672B\u5C08\u984C\\Form1.vb [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-06-04T21:47:19.547Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
