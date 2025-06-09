@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="50dp">
+
+    <EditText
+        android:id="@+id/ageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="年齡"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/heightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="身高 (公分)"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/weightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="體重 (公斤)"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/frequencyEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="運動頻率 (次/週)"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/sportTypeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/sport_types" />
+
+    <Button
+        android:id="@+id/predictButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="預測" />
+
+</LinearLayout>

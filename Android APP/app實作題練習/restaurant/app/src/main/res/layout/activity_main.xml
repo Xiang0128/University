@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="50dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="請選擇菜色："
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/dish1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="宮保雞丁" />
+
+    <CheckBox
+        android:id="@+id/dish2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="糖醋排骨" />
+
+    <CheckBox
+        android:id="@+id/dish3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="炒青菜" />
+
+    <CheckBox
+        android:id="@+id/dish4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="滷肉飯" />
+
+    <CheckBox
+        android:id="@+id/dish5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="炒米粉" />
+
+    <!-- ...更多菜色 -->
+
+    <Button
+        android:id="@+id/checkoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="結帳" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+
+</LinearLayout>

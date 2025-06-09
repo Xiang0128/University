@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">midterm1</string>
+    <string-array name="sport_types">
+        <item>跑步</item>
+        <item>游泳</item>
+        <item>騎自行車</item>
+    </string-array>
+</resources>

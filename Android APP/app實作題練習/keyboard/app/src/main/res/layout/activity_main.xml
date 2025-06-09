@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/inputTextView"
+        android:layout_width="374dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/keypadGridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <GridLayout
+        android:id="@+id/keypadGridLayout"
+        android:layout_width="376dp"
+        android:layout_height="457dp"
+        android:columnCount="3"
+        android:rowCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- 數字鍵 1～9 -->
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="1"
+            android:textColor="@android:color/black"
+            android:layout_margin="4dp"
+            app:cornerRadius="4dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="120dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="2"
+            android:textColor="@android:color/black"
+            android:layout_margin="4dp"
+            app:cornerRadius="4dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="120dp"
+            android:text="3"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textColor="@android:color/black"
+            android:layout_margin="4dp"
+            app:cornerRadius="4dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="120dp"
+            android:text="4"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textColor="@android:color/black"
+            android:layout_margin="4dp"
+            app:cornerRadius="4dp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="120dp"
+            android:text="5"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textColor="@android:color/black"
+            android:layout_margin="4dp"
+            app:cornerRadius="4dp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="120dp"
+            android:text="6"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textColor="@android:color/black"
+            android:layout_margin="4dp"
+            app:cornerRadius="4dp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="120dp"
+            android:text="7"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textColor="@android:color/black"
+            android:layout_margin="4dp"
+            app:cornerRadius="4dp" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="120dp"
+            android:text="8"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textColor="@android:color/black"
+            android:layout_margin="4dp"
+            app:cornerRadius="4dp" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="120dp"
+            android:text="9"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textColor="@android:color/black"
+            android:layout_margin="4dp"
+            app:cornerRadius="4dp" />
+
+        <!-- 其他鍵 -->
+        <Button
+            android:id="@+id/buttonStar"
+            android:layout_width="120dp"
+            android:text="*"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textColor="@android:color/black"
+            android:layout_margin="4dp"
+            app:cornerRadius="4dp" />
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="120dp"
+            android:text="0"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textColor="@android:color/black"
+            android:layout_margin="4dp"
+            app:cornerRadius="4dp" />
+
+        <Button
+            android:id="@+id/buttonHash"
+            android:layout_width="120dp"
+            android:text="#"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textColor="@android:color/black"
+            android:layout_margin="4dp"
+            app:cornerRadius="4dp" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
