@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/LoginAndRegisterUI.unity
+    guid: 4516f63f61351744db2f4ae0e75544c9
+  - enabled: 1
+    path: Assets/Scenes/HomeUI.unity
+    guid: 4b8593a05f3ba714c99b65551e903b07
+  - enabled: 1
+    path: Assets/Scenes/ModelView.unity
+    guid: a7b097c64776e41488be2a54bc51d448
+  - enabled: 1
+    path: Assets/Scenes/MediaPipeDetector.unity
+    guid: 1aba3a20f2c32864ba2772279a9edbd2
+  - enabled: 1
+    path: Assets/Scenes/TestPanel.unity
+    guid: bacae258737610b439ad2f05fecdc42f
+  m_configObjects: {}
