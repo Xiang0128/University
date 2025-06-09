@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅遊 - 中源埔渡</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <style>
+        head {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #ccc;
+        }
+
+        header img {
+            height: 50px;
+            width: auto;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-left: auto;
+        }
+        
+        nav {
+            font-size: 16px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000; /* 預設黑色 */
+            font-weight: bold;
+        }
+        
+        nav a.active {
+            color: #d9412b; /* 高亮顏色（紅色） */
+            text-decoration: underline; /* 可選：增加下劃線效果 */
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+
+        .content h2 {
+            font-size: 38px;
+            color: #d9412b;
+            margin-bottom: -30px;
+            margin-top: 20px;
+            margin: 20px auto; 
+        }
+
+        .content h3 {
+            font-size: 46px;
+            color: #666;
+            margin: 10px;
+        }
+
+        .content img {
+            float: right;
+            margin-right: 100px;
+            margin-top: 50px;
+            max-width: 500px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .info {
+            margin-left: 150px;
+            /* 整體右移 */
+        }
+
+        .info h4 {
+            font-size: 50px;
+            color: #5176c0;
+            margin-bottom: 30px;
+        }
+
+        .info p {
+            font-size: 20px;
+            line-height: 2.5;
+            margin: 0;
+            /* 確保段落間的對齊 */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .site-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .site-name .red {
+            color: #d9412b;
+        }
+
+        .site-name .blue {
+            color: #0044cc;
+        }
+
+        .thick-line {
+            border: none;
+            border-bottom: 3px solid rgba(0, 0, 0, 0.334);
+            width: 100%;
+            float: right;
+        }
+
+        .slideshow-container {
+            margin: 30px auto;
+            max-width: 800px;
+            height: auto;
+            position: relative;
+            background: rgb(241, 220, 182);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .slide {
+            display: none;
+            flex-direction: column;
+        }
+
+        .slide.active {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .landscape-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
+            text-align: center; /* 標題置中 */
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between; /* 將圖片和描述文字分開 */
+            align-items: center;
+            gap: 20px; /* 增加圖片和文字間距 */
+        }
+
+        .slide img {
+            width: 100%; /* 圖片佔一半寬度 */
+            height: 500px;
+            border-radius: 10px;
+            margin: 20px auto ; /* 圖片居中 */
+            display: block; 
+        }
+
+        .description {
+            background-color: burlywood;
+            padding: 20px;
+            height: 50;
+            border-radius: 10px;
+            font-size: 16px;
+            line-height: 1.5;
+            width: 100%; /* 解釋內容佔容器一半寬度 */
+            box-sizing: border-box; /* 包含 padding */
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+            z-index: 10;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="img/icon.png" alt="中源埔渡">
+            <p class="site-name">
+                <span class="red">中</span><span class="blue">源</span><span class="red">埔</span><span
+                    class="blue">渡</span>
+            </p>
+        </div>
+        <div class="nav-container">
+            <nav>
+                <a href="ZhongPu_主頁.html">首頁</a>
+                <a href="ZhongPu_簡介.html">簡介</a>
+                <a href="ZhongPu_旅遊.html" class="active">旅遊</a>
+                <a href="ZhongPu_住宿.html">住宿</a>
+                <a href="ZhongPu_交通.html">交通</a>
+                <a href="ZhongPu_影音.html">影音</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="slideshow-container">
+            <div class="slide active">
+                <div class="landscape-name">❤️❤️❤️萌寵村親子樂園❤️❤️❤️</div>
+                <img src="img/kpbl.jpg" alt="萌寵村親子樂園">
+                <div class="description"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;嘉義新開幕親子景點，「萌寵村親子樂園」，離中埔交流道開車約8分鐘，要前往阿里山也會經過，可以安排順遊。
+                    園區裡分為遊戲區、動物區和室內區，遊戲區有人力海盜船、射箭、釣魚和坑爹飛車，不用額外花錢都能暢玩。
+                    動物區有梅花鹿、陸龜、水豚君、羊和羊駝等，種類滿多，又沒有便便臭味。
+                    室內則有娃娃機、彈珠檯，門票也可以在這裡抵用餐點。
+                    園區設施完善，動物可愛，一票玩到底，可以搭配中埔景點或是上阿里山前順道來玩。<br><br></div>
+            </div>
+            <div class="slide">
+                <div class="landscape-name">🌳🌳🌳石硦林場🌳🌳🌳</div>
+                <img src="img/aa.png" alt="石硦林場">
+                <div class="description"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位於阿里山下的石硦林場過去是在地人生活的場域，現在經過整理後成為登山健行旅客的秘境之地。
+                    旅客可以從山腰處的入口沿著步道穿越山林，慢慢爬上了中埔鄉的桶頭山，站上全新修建的展望台，一眺美麗的嘉義風景。
+                    走在寬達30餘公頃的森林之中，即便是夏天也使人感受到沁涼。而森林在光合作用下，吐納出的清新的空氣，讓人走在充滿自然環境的生態之中，
+                    心情也為之療癒。沿途還有各種豐富的林相植物相隨，幸運的話還能遇見五色鳥等保育類的鳥類，
+                    是一條相當簡單、親民、好走的山林步道。<br><br></div>
+            </div>
+            <div class="slide">
+                <div class="landscape-name">🐮🐮🐮粉牛樂園🐮🐮🐮</div>
+                <img src="img/1641055424-1908198580-g_l.jpg" alt="粉牛樂園">
+                <div class="description"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;綠盈牧場是嘉義中埔知名牧場，2023年重新整修後於1/14開放，並更名為「粉牛樂園」
+                    門票便宜設施又多口碑相當好，必訪嘉義景點之一，綠盈牧場內飼養牛、羊、兔子、馬等動物，
+                    特色設施則有牽牛花溜滑梯、鎖教堂及賞蝶屋，
+                    假日還有賽鵝跟擠ㄋㄟㄋㄟ體驗，為IG拍照景點，是個全家大小都很適合遊玩的景點。<br><br></div>
+            </div>
+            <button class="prev">&lt;</button>
+            <button class="next">&gt;</button>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 中源埔渡
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".slide");
+        const prevButton = document.querySelector(".prev");
+        const nextButton = document.querySelector(".next");
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove("active");
+                if (i === index) slide.classList.add("active");
+            });
+        }
+
+        function nextSlide() {
+            slideIndex = (slideIndex + 1) % slides.length;
+            showSlide(slideIndex);
+        }
+
+        function prevSlide() {
+            slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+            showSlide(slideIndex);
+        }
+
+        nextButton.addEventListener("click", nextSlide);
+        prevButton.addEventListener("click", prevSlide);
+        setInterval(nextSlide, 5000);
+    </script>
+</body>
+
+</html>

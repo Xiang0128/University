@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中源埔渡</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #ccc;
+        }
+
+        header img {
+            height: 50px;
+            width: auto;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-left: auto;
+        }
+        
+        nav {
+            font-size: 16px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000; /* 預設黑色 */
+            font-weight: bold;
+        }
+        
+        nav a.active {
+            color: #d9412b; /* 高亮顏色（紅色） */
+            text-decoration: underline; /* 可選：增加下劃線效果 */
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .title {
+            position: relative;
+            width: 100vw;
+            margin-top: 60px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+        .title h1 {
+            font-size: 46px;
+            color: #5176c0;
+            margin: 10px;
+            text-align: center;
+            
+        }
+
+        .content {
+            position: relative;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+
+
+        .content h2 {
+            font-size: 38px;
+            color: #d9412b;
+            margin-bottom: -30px;
+            margin-top: 20px;
+            margin: 20px auto; 
+        }
+
+        .content h3 {
+            font-size: 46px;
+            color: #050505;
+            margin: 10px;
+            text-align: center;
+            
+        }
+
+        .content img {
+            float: right;
+            margin-right: 100px;
+            margin-top: 50px;
+            max-width: auto;
+            max-height: 250px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .info {
+            margin-left: 150px;
+            /* 整體右移 */
+            
+        }
+
+        .info h4 {
+            font-size: 36px;
+            color: #5176c0;
+            margin-bottom: 30px;
+        }
+
+        .info p {
+            font-size: 20px;
+            line-height: 2.5;
+            margin: 0;
+            /* 確保段落間的對齊 */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .site-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .site-name .red {
+            color: #d9412b;
+        }
+
+        .site-name .blue {
+            color: #0044cc;
+        }
+
+        .thick-line {
+            border: none;
+            border-bottom: 3px solid rgba(0, 0, 0, 0.334);
+            width: 100%;
+            float: right;
+        }
+        /* Slideshow styles */
+        .slideshow-contain {
+            position: relative;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;   
+        }
+        
+        .slide {
+            display: none;
+            padding: 20px;
+            text-align: left;
+            flex-direction: column;
+        }
+        
+        .slide.active {
+            display: block;
+        }
+        button.prev,
+        button.next {
+            position: absolute;
+            top: 60%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        button.prev {
+            left: 10px;
+        }
+
+        button.next {
+            right: 10px;
+        }
+        .carousel-contain {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .carousel {
+            position: relative;
+            width: 100vw;
+            overflow: hidden;
+            border-radius: 0;
+            box-shadow: none;
+        }
+        
+        .carousel-slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        
+        .carousel-slides img {
+            width: 100%;
+            flex-shrink: 0;
+            height: 530px;
+        }
+        
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+        .carousel-btn.prev {
+            left: 10px;
+        }
+        
+        .carousel-btn.next {
+            right: 10px;
+        }
+        
+        .carousel-btn:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="img/icon.png" alt="中源埔渡">
+            <p class="site-name">
+                <span class="red">中</span><span class="blue">源</span><span class="red">埔</span><span
+                    class="blue">渡</span>
+            </p>
+        </div>
+            <div class="nav-container">
+                <nav>
+                    <a href="ZhongPu_主頁.html" class="active">首頁</a>
+                    <a href="ZhongPu_簡介.html">簡介</a>
+                    <a href="ZhongPu_旅遊.html">旅遊</a>
+                    <a href="ZhongPu_住宿.html">住宿</a>
+                    <a href="ZhongPu_交通.html">交通</a>
+                    <a href="ZhongPu_影音.html">影音</a>
+                </nav>
+            </div>
+    </header>
+    <div class="title"><h1>探索嘉義縣中埔鄉的山水之美，發現文化與美食的精華</h1></div>
+
+    <div class="carousel">
+        <div class="carousel-slides">
+            <img src="img/hp1.jpg" alt="景點1">
+            <img src="img/hp2.jpg" alt="景點2">
+            <img src="img/hp3.jpg" alt="景點3">
+            <img src="img/hp4.jpg" alt="景點4">
+            <img src="img/hp5.jpg" alt="景點5">
+        </div>
+        <button class="carousel-btn prev">〈</button>
+        <button class="carousel-btn next">〉</button>
+    </div>
+
+    <div class="carousel-contain"> 
+        <div class="content">
+            <div class="content slide active">
+                <h2>中埔特色</h2>
+                <p></p>
+                <hr class="thick-line">
+                <p></p>
+                <img src="img/a.jpg" alt="中埔澐水溪溫泉">
+                <div class="info">
+                    <h4><strong>中埔澐水溪溫泉</strong></h4>
+                    <p><strong>地址：</strong>嘉義縣中埔鄉中崙村1號</p>
+                    <p><strong>電話：</strong>05-253-4399</p>
+                    <p><strong>營業時間：</strong>10:00~22:00</p>
+                    <p><strong>票價：</strong>全票200元，優待票150元</p>
+                    <p><strong>車位：</strong>提供免費停車</p>
+                </div>
+            </div>
+        
+            <div class="content slide">
+                <h2>中埔特色</h2>
+                <p></p>
+                <hr class="thick-line">
+                <p></p>
+                <img src="img/temple.jpg" alt="歡喜財神廟">
+                <div class="info">
+                    <h4><strong>歡喜財神廟</strong></h4>
+                    <p><strong>地址：</strong>嘉義縣中埔鄉19號</p>
+                    <p><strong>電話：</strong>05-253-6858</p>
+                    <p><strong>營業日期：</strong>每日</p>
+                    <p><strong>營業時間：</strong>07:00~19:00</p>
+                    <p><strong>車位：</strong>提供免費停車</p>
+                </div>
+            </div>
+
+            <div class="content slide">
+                <h2>中埔特色</h2>
+                <p></p>
+                <hr class="thick-line">
+                <p></p>
+                <img src="img/barn.jpg" alt="中埔穀倉農創園區">
+                <div class="info">
+                    <h4><strong>中埔穀倉農創園區</strong></h4>
+                    <p><strong>地址：</strong>嘉義縣中埔鄉36號</p>
+                    <p><strong>電話：</strong>05-239-8798</p>
+                    <p><strong>營業日期：</strong>每日</p>
+                    <p><strong>營業時間：</strong>09:00~18:00</p>
+                    <p><strong>車位：</strong>提供免費停車</p>
+                </div>
+            </div>
+
+            <div class="content slide">
+                <h2>中埔特色</h2>
+                <p></p>
+                <hr class="thick-line">
+                <p></p>
+                <img src="img/visitorcenter.jpg" alt="中埔遊客中心">
+                <div class="info">
+                    <h4><strong>中埔遊客中心</strong></h4>
+                    <p><strong>地址：</strong>嘉義縣中埔鄉同仁1-9號</p>
+                    <p><strong>電話：</strong>05-253-0053</p>
+                    <p><strong>營業日期：</strong>每日</p>
+                    <p><strong>營業時間：</strong>09:00~17:00</p>
+                    <p><strong>車位：</strong>提供免費停車</p>
+                </div>
+            </div>
+
+            <div class="content slide">
+                <h2>中埔特色</h2>
+                <p></p>
+                <hr class="thick-line">
+                <p></p>
+                <img src="img/cow.jpg" alt="粉牛樂園">
+                <div class="info">
+                    <h4><strong>粉牛樂園</strong></h4>
+                    <p><strong>地址：</strong>嘉義縣中埔鄉村四鄰2-6號</p>
+                    <p><strong>電話：</strong>05-253-8505</p>
+                    <p><strong>營業日期：</strong>每周四到周二</p>
+                    <p><strong>營業時間：</strong>09:00~17:00 六日：08:00~18:00</p>
+                    <p><strong>車位：</strong>提供免費停車</p>
+                </div>
+            </div>
+            <!-- 左右按鈕 -->
+            <button class="prev">&lt;</button>
+            <button class="next">&gt;</button>
+        </div>
+    </div>   
+
+    <div class="carousel-contain"> 
+        <div class="content">
+            <div class="content slide active">
+                <h2>中埔美食</h2>
+                <p></p>
+                <hr class="thick-line">
+                <p></p>
+                <img src="img/gao.png" alt="鈴蘭手工碗粿">
+                <div class="info">
+                    <h4><strong>鈴蘭手工碗粿</strong></h4>
+                    <p><strong>地址：</strong>嘉義縣中埔鄉同仁村42-4號(同仁國小後門)</p>
+                    <p><strong>電話：</strong>05-253-7308</p>
+                    <p><strong>營業日期：</strong>每周三到周六</p>
+                    <p><strong>營業時間：</strong>05:00~11:00</p>
+                    <p><strong>價格：</strong>30~150元</p>
+                </div>
+            </div>
+        
+            <div class="content slide">
+                <h2>中埔美食</h2>
+                <p></p>
+                <hr class="thick-line">
+                <p></p>
+                <img src="img/linja.jpg" alt="林家點心城">
+                <div class="info">
+                    <h4><strong>林家點心城</strong></h4>
+                    <p><strong>地址：</strong>嘉義縣中埔鄉社口村檨仔林34之3號</p>
+                    <p><strong>電話：</strong>05-239-9607</p>
+                    <p><strong>營業日期：</strong>每日</p>
+                    <p><strong>營業時間：</strong>10:00~14:00 及 16:30~19:00</p>
+                    <p><strong>價格：</strong>40~200元</p>
+                </div>
+            </div>
+
+            <div class="content slide">
+                <h2>中埔美食</h2>
+                <p></p>
+                <hr class="thick-line">
+                <p></p>
+                <img src="img/grassjelly.webp" alt="青穀仙草">
+                <div class="info">
+                    <h4><strong>青穀仙草</strong></h4>
+                    <p><strong>地址：</strong>嘉義縣中埔鄉金蘭村14鄰頂山門35號</p>
+                    <p><strong>電話：</strong>05-239-3932</p>
+                    <p><strong>營業日期：</strong>每周四至周一</p>
+                    <p><strong>營業時間：</strong>11:00~18:30</p>
+                    <p><strong>價格：</strong>50~90元</p>
+                </div>
+            </div>
+
+            <div class="content slide">
+                <h2>中埔美食</h2>
+                <p></p>
+                <hr class="thick-line">
+                <p></p>
+                <img src="img/corn.jpg" alt="阿婆烤玉米">
+                <div class="info">
+                    <h4><strong>阿婆烤玉米</strong></h4>
+                    <p><strong>地址：</strong>嘉義縣中埔鄉中正路676號</p>
+                    <p><strong>電話：</strong>0919-166529</p>
+                    <p><strong>營業日期：</strong>每日</p>
+                    <p><strong>營業時間：</strong>09:00~19:00</p>
+                    <p><strong>價格：</strong>70~80元</p>
+                </div>
+            </div>
+            <!-- 左右按鈕 -->
+            <button class="prev">&lt;</button>
+            <button class="next">&gt;</button>
+        </div>
+    </div>   
+    
+    <footer>
+        &copy; 2024 中源埔渡
+    </footer>
+
+    <script>
+        const slides = document.querySelector('.carousel-slides');
+        const prevBtn = document.querySelector('.carousel-btn.prev');
+        const nextBtn = document.querySelector('.carousel-btn.next');
+        const totalSlides = document.querySelectorAll('.carousel-slides img').length;
+        let currentSlide = 0;
+    
+        function updateCarousel() {
+            const slideWidth = slides.querySelector('img').clientWidth;
+            slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+        }
+    
+        prevBtn.addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        });
+    
+        nextBtn.addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateCarousel();
+        });
+    
+        window.addEventListener('resize', updateCarousel); // 保證在視窗大小改變時保持正確的顯示
+        document.querySelectorAll(".carousel-contain").forEach((carousel) => {
+            let slideIndex = 0;
+            const slides = carousel.querySelectorAll(".slide");
+            const prevButton = carousel.querySelector(".prev");
+            const nextButton = carousel.querySelector(".next");
+        
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.remove("active");
+                    if (i === index) slide.classList.add("active");
+                });
+            }
+        
+            function nextSlide() {
+                slideIndex = (slideIndex + 1) % slides.length;
+                showSlide(slideIndex);
+            }
+        
+            function prevSlide() {
+                slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+                showSlide(slideIndex);
+            }
+        
+            nextButton.addEventListener("click", nextSlide);
+            prevButton.addEventListener("click", prevSlide);
+        
+            // 自動播放幻燈片
+            setInterval(nextSlide, 5000);
+        });
+    </script>
+
+</body>
+
+</html>
