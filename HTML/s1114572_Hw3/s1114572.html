@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>s1114572</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .image-container {
+      position: relative;
+      width: 300px;
+      height: 400px;
+      perspective: 1000px;
+    }
+
+    .image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      transition: transform 0.5s ease-in-out, left 0.5s ease-in-out;
+      transform-origin: center center;
+    }
+
+    .image.moving-left {
+      left: -110%;
+    }
+
+    .image.flipping {
+      transform: rotateY(-180deg);
+    }
+
+    .image.entering {
+      left: 0;
+      transform: rotateY(0deg);
+    }
+
+    .image:nth-child(1) { z-index: 5; }
+    .image:nth-child(2) { z-index: 4; }
+    .image:nth-child(3) { z-index: 3; }
+    .image:nth-child(4) { z-index: 2; }
+    .image:nth-child(5) { z-index: 1; }
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <img src="images/01.gif" class="image" alt="Image 1">
+    <img src="images/02.gif" class="image" alt="Image 2">
+    <img src="images/03.gif" class="image" alt="Image 3">
+    <img src="images/04.gif" class="image" alt="Image 4">
+    <img src="images/05.gif" class="image" alt="Image 5">
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.querySelector('.image-container');
+      const images = Array.from(document.querySelectorAll('.image'));
+      let isAnimating = false;
+
+      container.addEventListener('click', () => {
+        if (isAnimating) return;
+        isAnimating = true;
+
+        const firstImage = images.shift();
+
+        firstImage.classList.add('moving-left');
+
+        const onMoveLeftEnd = () => {
+          firstImage.classList.remove('moving-left');
+          firstImage.style.zIndex = 0;
+          firstImage.classList.add('flipping');
+          
+
+          setTimeout(() => {
+            firstImage.classList.remove('flipping');
+
+            const onFlipEnd = () => {
+              firstImage.classList.add('entering');
+
+              setTimeout(() => {
+                firstImage.classList.remove('entering');
+                container.appendChild(firstImage);
+                images.push(firstImage);
+
+                images.forEach((img, index) => {
+                  img.style.zIndex = images.length - index;
+                });
+
+                isAnimating = false;
+              }, 50);
+            };
+
+            firstImage.addEventListener('transitionend', onFlipEnd, { once: true });
+          }, 490);
+        };
+
+        firstImage.addEventListener('transitionend', onMoveLeftEnd, { once: true });
+      });
+    });
+  </script>
+</body>
+</html>

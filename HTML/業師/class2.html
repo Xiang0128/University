@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Attachment Toggle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+        .content {
+            width: 100vw;
+            height: 100vh;
+        }
+        .bgWrap {
+            width: 800px;
+            height: 500px;
+            margin: 50px auto;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            border: 2px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .bg1 {
+            background-image: url('img/bg1.jpg');
+        }
+        .bg2 {
+            background-image: url('img/bg2.jpg');
+        }
+        .bg3 {
+            background-image: url('img/bg3.jpg');
+        }
+        .bg4 {
+            background-image: url('img/bg4.jpg');
+        }
+        .bg5 {
+            background-image: url('img/bg5.jpg');
+        }
+        .buttons {
+            margin: 20px 0;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 0 10px;
+            cursor: pointer;
+            border: none;
+            background-color: #3085a3;
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .buttons button:hover {
+            background-color: #206070;
+        }
+    </style>
+    <script>
+        // 確保 DOM 完全載入後執行腳本
+        window.onload = function () {
+            const attachmentFix = document.getElementById('attachmentFix');
+            const attachmentScroll = document.getElementById('attachmentScroll');
+            const bgWraps = document.querySelectorAll('.bgWrap');
+
+            const fadeIn = (btn) => {
+                let myOpacity = 0
+            
+                const shutDownIn = setInterval(() => {
+                  myOpacity += 0.2
+            
+                  if (myOpacity >= 1) {
+                    clearInterval(shutDownIn)
+                  }
+                  btn.style.opacity = myOpacity
+                }, 100)
+              }
+            
+              const fadeOut = (btn) => {
+                let myOpacity = 1
+            
+                const shutDownOut = setInterval(() => {
+                  myOpacity -= 0.2
+            
+                  if (myOpacity <= 0) {
+                    clearInterval(shutDownOut)
+                  }
+                  btn.style.opacity = myOpacity
+                }, 100)
+              }
+    
+            // 定義切換為固定背景的函數
+            const changeAttachmentFix = () => {
+                bgWraps.forEach((bgWrap) => {
+                    bgWrap.style.backgroundAttachment = 'fixed';
+                    fadeIn(attachmentScroll)
+                    fadeOut(attachmentFix)
+                });
+            };
+    
+            // 定義切換為滾動背景的函數
+            const changeAttachmentScroll = () => {
+                bgWraps.forEach((bgWrap) => {
+                    bgWrap.style.backgroundAttachment = 'scroll';
+                    fadeIn(attachmentFix)
+                    fadeOut(attachmentScroll)
+                });
+            };
+    
+            // 綁定事件
+            attachmentFix.addEventListener('click', changeAttachmentFix);
+            attachmentScroll.addEventListener('click', changeAttachmentScroll);
+    
+            // 或直接使用 onclick 方法
+            // attachmentFix.onclick = changeAttachmentFix;
+            // attachmentScroll.onclick = changeAttachmentScroll;
+        };
+    </script>
+</head>
+
+<body>
+    <div class="buttons">
+        <button id="attachmentFix">視差滾動</button>
+        <button id="attachmentScroll">不要視差滾動</button>
+    </div>
+
+    <div class="bgWrap bg1"></div>
+    <div class="bgWrap bg2"></div>
+    <div class="bgWrap bg3"></div>
+    <div class="bgWrap bg4"></div>
+    <div class="bgWrap bg5"></div>
+
+    
+</body>
+</html>

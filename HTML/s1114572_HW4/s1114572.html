@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入頁面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            justify-content: center;
+            align-items: center;
+        }
+        fieldset {
+            width: 20%;
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #ccc;
+            background-color: white;
+        }
+        legend {
+            font-weight: bold;
+            font-style: italic;
+            font-size: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        button {
+            padding: 8px 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .action-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="s1114572.php" method="POST" id="loginForm">
+        <fieldset>
+            <legend>Just Login</legend>
+            <label for="username">帳號</label>
+            <input type="text" id="username" name="username" maxlength="12">
+            <label for="password">密碼</label>
+            <input type="password" id="password" name="password" maxlength="12">
+            <div class="action-container">
+                <div class="remember-container">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">記住帳號</label>
+                </div>
+                <button type="button" onclick="validateForm()">登入</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <script>
+        // 檢查 Cookie 是否有帳號記錄
+        window.onload = function() {
+            const username = getCookie("username");
+            if (username) {
+                document.getElementById("username").value = username;
+                document.getElementById("remember").checked = true;
+                document.getElementById("password").focus();
+            } else {
+                document.getElementById("username").focus();
+            }
+        };
+
+        // 驗證表單資料
+        function validateForm() {
+            const username = document.getElementById("username").value.trim();
+            const password = document.getElementById("password").value.trim();
+
+            if (!username) {
+                alert("帳號未填");
+                document.getElementById("username").focus();
+                return;
+            }
+            if (!password) {
+                alert("密碼未填");
+                document.getElementById("password").focus();
+                return;
+            }
+
+            // 設置或刪除 Cookie
+            const remember = document.getElementById("remember").checked;
+            if (remember) {
+                setCookie("username", username, 7); // 保存 7 天
+            } else {
+                deleteCookie("username");
+            }
+
+            // 提交表單
+            document.getElementById("loginForm").submit();
+        }
+
+        // Cookie 操作函數
+        function setCookie(name, value, days) {
+            const date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
+        }
+        function getCookie(name) {
+            const cookies = document.cookie.split("; ");
+            for (let cookie of cookies) {
+                const [key, value] = cookie.split("=");
+                if (key === name) return value;
+            }
+            return null;
+        }
+        function deleteCookie(name) {
+            document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+      height: 150vh;
+    }
+    .keyart {
+      position:relative;
+      height: 100vh;
+      z-index: 10;
+    }
+    .keyart_layer {
+      width: 100%;
+      height: 100%;
+      background-position: bottom center;
+      background-size: cover;
+    }
+    .keyart_layer.parallax {
+      position: fixed;
+    }
+    .coverBg {
+      position:relative;
+      z-index: 100;
+      height: 50vh;
+      background-color: #210002;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+</head>
+<style>
+#keyart-0 { background-image: url('parallaxImg/parallax0.png') }
+#keyart-1 { background-image: url('parallaxImg/parallax1.png') }
+#keyart-2 { background-image: url('parallaxImg/parallax2.png') }
+#keyart-3 { background-image: url('parallaxImg/parallax3.png') }
+#keyart-4 { background-image: url('parallaxImg/parallax4.png') }
+#keyart-5 { background-image: url('parallaxImg/parallax5.png') }
+#keyart-6 { background-image: url('parallaxImg/parallax6.png') }
+#keyart-7 { background-image: url('parallaxImg/parallax7.png') }
+#keyart-8 { background-image: url('parallaxImg/parallax8.png') }
+</style>
+<body>
+  <div class="keyart" id="parallax">
+    <div class="keyart_layer parallax" id="keyart-0" data-speed="2"></div>
+    <div class="keyart_layer parallax" id="keyart-1" data-speed="5"></div>
+    <div class="keyart_layer parallax" id="keyart-2" data-speed="11"></div>
+    <div class="keyart_layer parallax" id="keyart-3" data-speed="16"></div>
+    <div class="keyart_layer parallax" id="keyart-4" data-speed="26"></div>
+    <div class="keyart_layer parallax" id="keyart-5" data-speed="36"></div>
+    <div class="keyart_layer parallax" id="keyart-6" data-speed="49"></div>
+    <div class="keyart_layer parallax" id="keyart-7" data-speed="69"></div>
+    <div class="keyart_layer parallax" id="keyart-8" data-speed="100"></div>
+  </div>
+  <div class="coverBg"></div>
+</body>
+
+<script>
+  let keyarts = document.querySelectorAll('.keyart_layer')
+
+window.addEventListener('scroll', (event)=> {
+  const pageY = this.pageYOffset
+
+  for (const keyart of keyarts) {
+    const speed = keyart.getAttribute('data-speed')
+    const Y_move = (pageY * speed) * 0.01
+
+    keyart.style.transform = `translateY(${ -Y_move }px)`
+  }
+})
+</script>
+</html>

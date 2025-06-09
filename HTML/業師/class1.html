@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effects</title>
+    <!-- 引入 CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- 引入 Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800,300" rel="stylesheet" type="text/css">
+    <style>
+        /* 全域樣式 */
+        body {
+            background: #2f3238;
+            font-family: 'Raleway', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 1.875rem;
+            font-weight: 300;
+            line-height: 2.4rem;
+            text-transform: uppercase;
+            word-spacing: -.15rem;
+        }
+
+        h2 span {
+            font-weight: 800;
+        }
+
+        h2, p {
+            color: #fff;
+        }
+
+        p {
+            font-weight: 300;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        /* Lily 特效 */
+        figure.effect-lily {
+            position: relative;
+            max-width: 480px;
+            max-height: 360px;
+            margin: 1.5rem;
+            background-color: #3085a3;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        figure.effect-lily img {
+            width: calc(100% + 40px);
+            opacity: 0.7;
+            transition: transform 0.35s ease-in-out, opacity 0.35s ease-in-out;
+        }
+
+        figure.effect-lily:hover img {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+
+        figure.effect-lily figcaption {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+
+        figure.effect-lily .content {
+            width: 100%;
+            height: 50%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+
+        figure.effect-lily .content h2 {
+            transform: translate3d(0, 40px, 0);
+            transition: transform .35s;
+        }
+
+        figure.effect-lily:hover .content h2 {
+            transform: translate3d(0, 0, 0);
+        }
+
+        figure.effect-lily .content p {
+            opacity: 0;
+            transform: translate3d(0, 40px, 0);
+            transition: opacity .2s, transform .35s;
+        }
+
+        figure.effect-lily:hover .content p {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+
+        /* Oscar 特效 */
+        figure.effect-oscar {
+            position: relative;
+            max-width: 480px;
+            max-height: 360px;
+            margin: 1.5rem;
+            overflow: hidden;
+            background: linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+        }
+
+        figure.effect-oscar img {
+            opacity: 0.9;
+            transition: opacity .2s;
+        }
+
+        figure.effect-oscar:hover img {
+            opacity: 0.4;
+        }
+
+        figure.effect-oscar figcaption {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(58, 52, 42, 0.7);
+            transition: background-color 0.35s;
+        }
+
+        figure.effect-oscar:hover figcaption {
+            background-color: rgba(58, 52, 42, 0);
+        }
+
+        figure.effect-oscar .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            padding: 3rem;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        figure.effect-oscar .content h2 {
+            margin: 20% 0 10px 0;
+            transform: translate3d(0, 100%, 0);
+            transition: transform 0.35s;
+        }
+
+        figure.effect-oscar:hover h2 {
+            transform: translate3d(0, 0, 0);
+        }
+
+        figure.effect-oscar .content p {
+            opacity: 0;
+            transform: scale(0);
+            transition: opacity .35s, transform .3s;
+        }
+
+        figure.effect-oscar:hover .content p {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        figure.effect-oscar figcaption::before {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            right: 30px;
+            bottom: 30px;
+            border: 1px solid #fff;
+            transform: scale(0);
+            transition: transform 0.35s;
+        }
+
+        figure.effect-oscar:hover figcaption::before {
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Lily 特效 -->
+    <figure class="effect-lily">
+        <img src="https://tympanus.net/Development/HoverEffectIdeas/img/12.jpg" alt="Lily Image">
+        <figcaption>
+            <div class="content">
+                <h2>Nice <span>Lily</span></h2>
+                <p>Lily likes to play with crayons and pencils</p>
+            </div>
+        </figcaption>
+    </figure>
+
+    <!-- Oscar 特效 -->
+    <figure class="effect-oscar">
+        <img src="https://tympanus.net/Development/HoverEffectIdeas/img/12.jpg" alt="Oscar Image">
+        <figcaption>
+            <div class="content">
+                <h2>Cool <span>Oscar</span></h2>
+                <p>Oscar enjoys painting with watercolors</p>
+            </div>
+        </figcaption>
+    </figure>
+</body>
+</html>
